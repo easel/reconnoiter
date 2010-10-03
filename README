@@ -1,0 +1,47 @@
+Reconnoiter - http://labs.omniti.com/labs/reconnoiter
+
+Reconnoiter's goal is to better the world of monitoring by marrying fault
+detection and trending together. Through ease of configuration and ongoing
+maintenance, Reconnoiter encourages monitoring important technical metrics
+along side critical business metrics to improve awareness and ultimately
+accountability.
+
+Reconnoiter? Who names this stuff? Honestly?
+Read about the goals of Reconnoiter. Rant version.
+Architecture
+
+Web console to provide a view into the world.
+Core database, holds metrics and business logic for determining faults, fault
+notification and escalation procedures
+Strategy daemon to collect information from Scout nodes
+Scout nodes that perform checks. Scout nodes run extremely efficiently -- tens
+of thousands of services monitored per scout.
+A picture is worth a thousand words.
+
+Watch the 2009 OSCON Reconnoiter presentation.
+
+Documentation
+
+Reconnoiter documentation
+And some more ad-hoc wiki documentation
+Download
+
+Urskek Release access is available to all.
+
+svn co https://labs.omniti.com/reconnoiter/tags/urskek reconnoiter
+Subversion trunk access is available to all.
+
+svn co https://labs.omniti.com/reconnoiter/trunk reconnoiter
+Development at this point is pretty rapid. As such, decisions are made that
+might cause what we call a "flag-day". A flag-day is when an upgrade through a
+specific version will prevent some functionality between that version and an
+older version. Commits that do this (like a change in protocol) will be marked
+as "flag-day" commits and note the system components that must be lock-step
+upgraded. Review flag-day commits.
+
+Specific (significant) upgrade notes.
+
+Installation can be a bit tricky, it might help to look at this step-by-step
+guide to installing on Debian.
+
+
